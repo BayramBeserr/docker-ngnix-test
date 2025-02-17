@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
-        run: docker build -t bayrambeser/docker-nginx-test:latest .
+        run: docker build -t bbeser/docker-nginx-test:latest .
 
       - name: Push Docker Image to Docker Hub
-        run: docker push bayrambeser/docker-nginx-test:latest
+        run: docker push bbeser/docker-nginx-test:latest
